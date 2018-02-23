@@ -1,0 +1,215 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.container {
+  margin: 0 auto;
+  width: 420px;
+}
+
+div.fixed {
+  position: fixed;
+  width: 420px;
+}
+
+/*status bar*/
+#statbar {
+  background-color:#FFF;
+  font-size: 70%;
+  color: #030303;
+  padding: 5px 0 12px 0;
+}
+
+.alignleft {
+  float: left;
+  text-align: left;
+  width:33.33%;
+}
+
+.alignleft i, .alignleft p {
+  display: inline-block;
+}
+
+.alignright {
+  float: left;
+  text-align: right;
+  width: 33.33%;
+}
+
+.alignright i, .alignright p {
+  display: inline-block;
+}
+
+.aligncenter {
+  float: left;
+  text-align: center;
+  width: 33.33%;
+}
+
+.center {
+  text-align: center;
+}
+
+/*navigation bar*/
+
+nav {
+  background-color: rgb(246, 115, 7);
+  color: #FFFFFF;
+  font-size: 150%;
+  margin: 0 auto;
+  padding: 5px 0 60px 10px;
+  width: 100%;
+}
+
+nav h1 {
+  font-family: "Laila", serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+
+img {
+  margin: 5px 10px 5px 0;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.fa-angle-left {
+  margin-top: 15px;
+}
+
+div, ul {
+  display: block;
+}
+
+/*departure and arrival bar*/
+#input-section {
+  margin-bottom: 10px;
+  background-color: #FFF;
+  padding-bottom: 5px;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.departbar {
+  background-color: rgba(246, 115, 7, 0.26);
+  border-radius: 5px;
+  color: #333333;
+  display: block;
+  padding: 3px 5px 3px 5px;
+  margin: 5px 0 5px 60px;
+}
+
+.depart-title {
+  display:block;
+  margin: 5px 0 5px 10px;
+  padding: 3px;
+  color: #333333;
+}
+
+/*bus-listing*/
+.content {
+  padding-top: 158px;
+}
+
+.bus-alignleft {
+  float: left;
+  text-align: left;
+  width:15%;
+}
+
+.bus-aligncenter1 {
+  float: left;
+  width: 20%;
+}
+
+.bus-aligncenter2 {
+  float: left;
+  width: 55%;
+}
+
+.bus-alignright {
+  float: left;
+  text-align: right;
+  width: 10%;
+}
+
+.bus-title {
+  background-color: #F88E36;
+  color: #FFF;
+  font-weight: bold;
+  padding: 8px 0 8px 15px;
+}
+
+#noservice {
+  background-color:rgba(246, 115, 7, 0.26);
+  color: #333;
+  padding: 8px 0 8px 15px;
+}
+
+.bus-listing {
+  display: block;
+  padding: 5px 0 5px 0;
+  width: 100%;
+  height: 50px;
+}
+
+.border {
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.bus-number, .bus-name, .arrow, .time-left p {
+  display: inline-block;
+}
+
+.bus-name h2 {
+  font-size: 120%;
+}
+
+.bus-number {
+  text-align: center;
+  font-size: 110%;
+  padding: 5px 10px 0 15px;
+}
+
+.bus-name p {
+  font-size: 90%;
+  padding-top: 5px;
+}
+
+.arrow {
+  padding: 5px 10px 0 0;
+}
+
+.time-left {
+  padding: 5px 0 0 10px;
+  font-size: 110%;
+  text-align: left;
+}
+
+.no-time-left {
+  padding: 5px 0 0 10px;
+  font-size: 110%;
+  color: #828282;
+}
+
+.not-running {
+  color: #828282;
+}
+
+.min {
+  font-size: 90%;
+}
+
+#re-route {
+  padding-top: 5px;
+}
