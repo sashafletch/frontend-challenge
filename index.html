@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BusyBus ListView</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Laila|Roboto" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <div class="fixed">
+        <div id= "statbar">
+          <div class="alignleft">
+            <i class="fas fa-signal"></i>
+            <p>GS</p>
+            <i class="fas fa-wifi"></i>
+          </div>
+          <div class="aligncenter">
+            <p>9:40 AM</p>
+          </div>
+          <div class="alignright">
+            <p>100%</p>
+            <i class="fas fa-battery-full"></i>
+          </div>
+        </div>
+        <nav>
+          <div class="alignleft">
+            <i class="fas fa-angle-left"></i>
+          </div>
+          <div class="aligncenter">
+            <h1>BusyBus</h1>
+          </div>
+          <div class="alignright">
+            <img src="images/susan.jpg" alt="Profile Picture" width= "50px">
+          </div>
+        </nav>
+<!--departure and arrival bar begins here-->
+        <div class="border" id="input-section">
+          <div class="inline">
+            <p><span class="depart-title">From:</span></p>
+            <p><span class="depart-title">To:</span></p>
+          </div>
+          <div class="inline">
+            <input type="text" class="departbar center" value="Washington and State">
+            <input type="text" class="departbar center" value="Monroe and Wacher Dr.">
+          </div>
+        </div>
+      </div>
+<!--bus-listing begins here-->
+    <div class="content">
+        <div>
+          <h3 class="bus-title">Eastbound</h3>
+          <ul class= "bus-listing border">
+              <li class="time-left bus-alignleft">5<span class="min"> min </span></li>
+              <li class="bus-number bus-aligncenter1">60</li>
+              <li class="bus-name bus-aligncenter2">
+                <h2> Randolph/Harbor Dr</h2>
+                <p> Every 20 minutes</p>
+              </li>
+              <li class="arrow bus-alignright">
+                <i class="fas fa-chevron-right"></i>
+              </li>
+          </ul>
+          <ul class="bus-listing">
+              <li class="time-left bus-alignleft">10<span class="min"> min</span></li>
+              <li class="bus-number bus-aligncenter1">124</li>
+              <li class="bus-name bus-aligncenter2">
+                <h2> Navy Pier</h2>
+                <p>Every 10 minutes</p>
+              </li>
+              <li class="arrow bus-alignright">
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </ul>
+          </div>
+        <!--Northbound buses-->
+          <div>
+            <h3 class="bus-title">Northbound</h3>
+            <ul class="bus-listing">
+                <li class="time-left bus-alignleft">8<span class="min"> min</span></li>
+                <li class="bus-number bus-aligncenter1">151</li>
+                <li class="bus-name bus-aligncenter2">
+                  <h2>Devon/Clark</h2>
+                  <p>Every 16 minutes</p>
+                </li>
+                <li class="arrow bus-alignright">
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </ul>
+          </div>
+          <!--Southbound buses-->
+          <div>
+            <h3 class="bus-title">Southbound</h3>
+            <ul class="bus-listing border">
+                <li class="time-left bus-alignleft">1<span class="min"> min</span></li>
+                <li class="bus-number bus-aligncenter1">J14</li>
+                <li class="bus-name bus-aligncenter2">
+                  <h2>103rd/Stony Island</h2>
+                  <p>Every 15 minutes</p>
+                </li>
+                <li class="arrow bus-alignright">
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </ul>
+              <ul class="bus-listing">
+                  <li class="time-left bus-alignleft">12<span class="min"> min</span></li>
+                  <li class="bus-number bus-aligncenter1">124</li>
+                  <li class="bus-name bus-aligncenter2">
+                    <h2>Navy Pier</h2>
+                    <p>Every 10 minutes</p>
+                  </li>
+                  <li class="arrow bus-alignright">
+                    <i class="fas fa-chevron-right"></i>
+                  </li>
+                </ul>
+          </div>
+          <!--Reroute buses-->
+          <div>
+            <h3 class="bus-title">Reroute</h3>
+            <ul class="bus-listing">
+                <li class="time-left bus-alignleft">4<span class="min"> min</span></li>
+                <li class="bus-number bus-aligncenter1">6X</li>
+                <li class="bus-name bus-aligncenter2" id="re-route">
+                  <h2>Jackson Park Express</h2>
+                </li>
+                <li class="arrow bus-alignright">
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </ul>
+          </div>
+
+  <!--Out of Sevice buses-->
+        <div>
+          <h3 id="noservice">Out of Service</h3>
+          <ul class="bus-listing not-running border">
+              <li class="time-left bus-alignleft">N/A</li>
+              <li class="bus-number bus-aligncenter1">4</li>
+              <li class="bus-name bus-aligncenter2">
+                <h2>Cottage Grove</h2>
+                <p>Resumes 12:10am</p>
+              </li>
+              <li class="arrow bus-alignright">
+                <i class="fas fa-chevron-right"></i>
+              </li>
+          </ul>
+          <ul class="bus-listing not-running border">
+              <li class="time-left bus-alignleft">N/A</li>
+              <li class="bus-number bus-aligncenter1">20</li>
+              <li class="bus-name bus-aligncenter2">
+                <h2>Madison</h2>
+                <p>Resumes 12:10am</p>
+              </li>
+              <li class="arrow bus-alignright">
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </ul>
+            <ul class="bus-listing not-running">
+              <li class="time-left bus-alignleft">N/A</li>
+              <li class="bus-number bus-aligncenter1">157</li>
+              <li class="bus-name bus-aligncenter2">
+                  <h2>Streetville/Taylor</h2>
+                  <p>Resumes 6:00am</p>
+              </li>
+              <li class="arrow bus-alignright">
+                  <i class="fas fa-chevron-right"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </section>
+  </body>
+</html>
